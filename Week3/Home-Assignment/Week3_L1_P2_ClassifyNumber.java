@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class classifyNumber {
-    static void classifyNumber(int number) {
+public class Week3_L1_P2_ClassifyNumber {
+
+    public static void classifyNumber(int number) {
+
         if (number > 0) {
             System.out.println("Positive");
         } else if (number < 0) {
@@ -12,12 +14,13 @@ public class classifyNumber {
     }
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
         int number = sc.nextInt();
 
         classifyNumber(number);
+
         sc.close();
     }
 }
